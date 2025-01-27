@@ -18,14 +18,14 @@ const Authentication = () => {
   useEffect(() => {
     localStorage.setItem("coucou", "allo")
     console.log(localStorage)
-    // const token = localStorage.getItem("token");
-    // if (token) {
-    //   navigate("/wall");
-    // }
+    const token = localStorage.getItem("token");
+    if (token) {
+      navigate("/wall");
+    }
   }, [navigate]);
 
   const handleSubmit = async (event) => {
-    event.preventDefault(); //evite les recharges du form
+    event.preventDefault();
     try {
       const response = await axios({
         method: "post",
@@ -54,7 +54,7 @@ const Authentication = () => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <LoginForm
         email={email}
         setEmail={setEmail}
@@ -64,7 +64,7 @@ const Authentication = () => {
         errors={errors}
       />
       {message && <p>{message}</p>}
-    </React.Fragment>
+    </>
   );
 };
 

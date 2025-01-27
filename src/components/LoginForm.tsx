@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { FaUserAlt, FaLock } from "react-icons/fa";
 import "../style/components-style/LoginForm.css";
+import "../style/components-style/Titre.css";
 
 const LoginForm = ({
   email,
@@ -13,7 +14,7 @@ const LoginForm = ({
   return (
     <div className="login-form">
       <form onSubmit={handleSubmit}>
-        <h1>Bienvenue !</h1>
+        <h1>BipBip.</h1>
 
         <div className="input-box">
           <input
@@ -63,7 +64,8 @@ const LoginForm = ({
             Pas de compte ?&nbsp;<a href="/registrer">Inscrivez-vous ici</a>
           </p>
           <p>
-            Mot de passe oublié ?&nbsp;<a href="/resetPassword">Réinitialiser</a>
+            Mot de passe oublié ?&nbsp;
+            <a href="/resetPassword">Réinitialiser</a>
           </p>
         </div>
       </form>

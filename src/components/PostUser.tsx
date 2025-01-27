@@ -1,5 +1,4 @@
 import "../style/components-style/PostUser.css";
-import Avatar from "../assets/pictures/avatar.png";
 
 const PostUser = () => {
   return (

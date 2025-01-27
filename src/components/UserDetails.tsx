@@ -1,6 +1,5 @@
 import LogOutButton from "./LogOutButton";
 import "../style/components-style/UserDetails.css";
-import Avatar from "../assets/pictures/avatar.png"
 
 const UserDetails = () => {
   return (
