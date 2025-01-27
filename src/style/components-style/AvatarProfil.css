@@ -1,0 +1,9 @@
+.avatar {
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    border: solid 1px white;
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+  }

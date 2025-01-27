@@ -1,0 +1,19 @@
+.deco-button button {
+    width: 55%;
+    height: 45px;
+    background: transparent;
+    outline: none;
+    border: solid 1px white;
+    border-radius: 40px;
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.201); */
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+.deco-button button:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.422);
+    transition: background-color 0.2s ease-in-out;
+  }

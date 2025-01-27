@@ -1,0 +1,22 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --font-family: "Arial, sans-serif";
+  --font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  border: solid 1px red;
+  overflow: hidden;
+  background-image: url("./assets/pictures/img1.wallspic.com-art-arts_visuels-dessin-atmosphere-lecoregion-3840x2160.png"); /* Chemin de l'image */
+  background-size: cover; /* Couvre toute la zone de l'élément */
+  background-position: center;
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+}

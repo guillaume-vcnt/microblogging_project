@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Nerko+One&family=Rubik+Glitch&display=swap");
+
+.titre-blog-header H1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

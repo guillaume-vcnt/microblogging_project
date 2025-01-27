@@ -1,0 +1,16 @@
+.user-profil-button {
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+  border: solid 1px white;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 18%;
+}
+
+.user-profil-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: white;
+}

@@ -1,0 +1,15 @@
+.footer-bar {
+  height: 5rem;
+  padding: 0 20px;
+  background: rgba(255, 255, 255, 0.219);
+  border: 1px solid rgba(255, 255, 255, 0.511);
+  backdrop-filter: blur(50px);
+  color: rgb(255, 255, 255);
+  display: flex;
+  margin-top: 41.7rem;
+}
+
+.footer-bar a {
+  margin: auto;
+  word-spacing: 50px;
+}
