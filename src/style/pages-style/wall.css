@@ -1,0 +1,47 @@
+.wall-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #F5F5F5; /* Définissez une couleur valide */
+}
+.profile-section, .posts-section {
+  background-color: #222020;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 48%;
+}
+.profile-section img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.post {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.post h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.post p {
+  font-size: 16px;
+  color: #333;
+}
+.message {
+  color: red;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .wall-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-section, .posts-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

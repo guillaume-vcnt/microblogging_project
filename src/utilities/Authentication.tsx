@@ -3,21 +3,20 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import LoginForm from "../components/LoginForm";
 
-
 const Authentication = () => {
   const apiUrl = String(import.meta.env.VITE_API_URL);
 
-  const [email, setEmail] = useState("georgesClooney@test.com");
-  const [password, setPassword] = useState("whatelse1");
+  const [email, setEmail] = useState("alicyaKeys@test.com");
+  const [password, setPassword] = useState("1234");
 
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({ email: "", password: "" });
 
   const navigate = useNavigate();
-  
+
   useEffect(() => {
-    localStorage.setItem("coucou", "allo")
-    console.log(localStorage)
+    localStorage.setItem("coucou", "allo");
+    console.log(localStorage);
     const token = localStorage.getItem("token");
     if (token) {
       navigate("/wall");
@@ -33,6 +32,9 @@ const Authentication = () => {
         url: `${apiUrl}api/login/`,
         data: { email, password },
         withCredentials: false,
+        headers: {
+          'Content-Type': 'application/json',
+        },
       });
 
       console.log("😆", response);
@@ -43,7 +45,8 @@ const Authentication = () => {
           ...response.data.errors,
         }));
       } else {
-        localStorage.setItem("token", response.data.token);
+        localStorage.setItem("token", response.data.access);
+        localStorage.setItem("refreshToken", response.data.refresh);
         navigate("/wall");
         setMessage("Connexion réussie !");
       }

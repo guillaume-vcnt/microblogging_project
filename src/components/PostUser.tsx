@@ -1,22 +1,22 @@
 import "../style/components-style/PostUser.css";
 
-const PostUser = () => {
+const PostUser = ({ post }) => {
+  function handleClick() {
+    window.location.href = "http://localhost:8000/userprofil";
+  }
+
   return (
     <div className="post-container">
-      <img className="avatar-user" src={Avatar} alt="Photo-de-profil" />
+      <img className="avatar-user" onClick={handleClick}  alt="Photo-de-profil" />
       <article className="article">
         <header>
-          <p className="name-user">Par George Clooney</p>
-          <time
-            className="date-user"
-            value="date"
-            dateTime="2024-12-13T14:52:24"
-          >
-            <em>13 décembre 2024 à 14h52</em>
+          <p className="name-user">Par {post.username}</p>
+          <time className="date-user" dateTime={post.created_at}>
+            <em>{new Date(post.created_at).toLocaleString("fr-FR")}</em>
           </time>
         </header>
         <section>
-          <p className="content-user">Aujourd'hui, j'ai bu un bon café...</p>
+          <p className="content-user">{post.content}</p>
         </section>
         <footer>
           <button type="button" className="like-button">
@@ -30,5 +30,4 @@ const PostUser = () => {
     </div>
   );
 };
-
 export default PostUser;
