@@ -1,4 +1,4 @@
-microblogging_project
+Microblogging project
 
 ## À propos
 
